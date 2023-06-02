@@ -1,11 +1,20 @@
 import React, {useEffect, useState} from 'react';
+import Welcome from './Welcome'
+import NavBar from './NavBar'
+import Cash from './Cash';
+
 import './App.css';
 
 function App() {
-  
+  const [cash, updateCash] =useState(0)
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   return (
-   
+    <div>
+      <h1>Shop-Owner Simulator</h1>
+      <Cash cash={cash}/>
+  <NavBar/>
+  <Welcome/>
+  </div>
   );
 }
 
