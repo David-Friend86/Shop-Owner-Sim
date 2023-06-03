@@ -1,9 +1,14 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Item from './Item'
 
-function ItemContainer(){
+function ItemContainer({items}){
     return(
-        <Item/>
+        <Fragment>
+        {items.map((item)=>
+            <Item key={item.name} item={item}/>
+        )}
+
+        </Fragment>
     )
 }
 

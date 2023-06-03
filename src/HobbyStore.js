@@ -2,12 +2,12 @@ import React from "react";
 import ItemContainer from "./ItemContainer";
 
 
-function HobbyStore(){
+function HobbyStore({inventory}){
 
     return(
         <div>
             <h1>Art Stuffs</h1>
-            <ItemContainer/> 
+            <ItemContainer items={inventory}/> 
         </div>
     )
 }

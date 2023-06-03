@@ -1,9 +1,19 @@
-import React from "react";
+import React, { Fragment } from "react";
 
-function Item(){
+let USDollar = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+})
+
+function Item({item}){
     
     return(
-        <h2>item</h2>
+        <Fragment>
+        <h3>{item.name}</h3>
+        <img src={item.image} alt={item.name}></img>
+        <h4>{`Price: ${USDollar.format(item.price)}`}</h4>
+        <button>Buy</button>
+        </Fragment>
     )
 }
 
