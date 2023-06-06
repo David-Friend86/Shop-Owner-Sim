@@ -11,10 +11,12 @@ import HardwareStore from './HardwareStore';
 import ElectronicStore from './ElectronicStore';
 
 import hobbyInventory from './hobbyInventory';
+import hardwareInventory from './hardwareInventory';
+import electronicsInventory from './electronicsInventory';
 
 
 function App() {
-  const [cash, updateCash] =useState(0)
+  const [cash, updateCash] =useState(100)
   const [userName, updateName] = useState('Jeff')
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   return (
@@ -28,10 +30,10 @@ function App() {
         <HobbyStore inventory={hobbyInventory} />
       </Route>
       <Route path="/rockmans-tools">
-        <HardwareStore />
+        <HardwareStore inventory ={hardwareInventory} />
       </Route>
       <Route path="/gadget-garden">
-        <ElectronicStore />
+        <ElectronicStore inventory={electronicsInventory} />
       </Route>
       <Route path="/">
         <Home/>

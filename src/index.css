@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.shopInventory{
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, 200px);
+}

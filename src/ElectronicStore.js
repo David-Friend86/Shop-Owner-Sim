@@ -2,12 +2,12 @@ import React from "react";
 import ItemContainer from "./ItemContainer";
 
 
-function ElectronicStore(){
+function ElectronicStore({inventory}){
 
     return(
         <div>
             <h1>Gadget Garden</h1>
-            <ItemContainer/> 
+            <ItemContainer items={inventory} className='shopInventory'/> 
         </div>
     )
 }

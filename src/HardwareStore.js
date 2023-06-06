@@ -2,12 +2,12 @@ import React from "react";
 import ItemContainer from "./ItemContainer";
 
 
-function HardwareStore(){
+function HardwareStore({inventory}){
 
     return(
         <div>
-            <h1>Club's Hardware</h1>
-            <ItemContainer/> 
+            <h1>Rockman's Tools</h1>
+            <ItemContainer items={inventory} className='shopInventory'/> 
         </div>
     )
 }

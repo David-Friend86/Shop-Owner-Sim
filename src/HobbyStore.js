@@ -6,8 +6,9 @@ function HobbyStore({inventory}){
 
     return(
         <div>
-            <h1>Art Stuffs</h1>
-            <ItemContainer items={inventory}/> 
+            <h1>Creation Station</h1>
+            <ItemContainer items={inventory} className='shopInventory'/> 
+ 
         </div>
     )
 }
