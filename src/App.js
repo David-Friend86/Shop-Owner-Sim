@@ -15,9 +15,12 @@ import hardwareInventory from './hardwareInventory';
 import electronicsInventory from './electronicsInventory';
 
 
+
 function App() {
   const [cash, updateCash] =useState(100)
   const [userName, updateName] = useState('Jeff')
+
+  
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   return (
     <div>
