@@ -8,12 +8,8 @@ const USDollar = new Intl.NumberFormat('en-US', {
 const itemStyle = {
     placeContent: 'center',
     display: 'grid',
-    alignContent: 'stretch',
-    alignItems: 'stretch',
-    justifyItems: 'stretch',
+    justifyItems: 'center',
     textAlign: 'center',
-    
-
 }
 
 function Item({item}){
@@ -21,7 +17,7 @@ function Item({item}){
     return(
         <div style={itemStyle}>
         <h3>{item.name}</h3>
-        <img src={item.image} alt={item.name}></img>
+        <img style={{width:'100%', maxWidth:'100px'}} src={item.image} alt={item.name}></img>
         <h4>{`Price: ${USDollar.format(item.price)}`}</h4>
         <button>Buy</button>
         </div>
