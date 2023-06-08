@@ -18,11 +18,21 @@ import electronicsInventory from './electronicsInventory';
 function App() {
   const [cash, updateCash] =useState(100)
   const [userName, updateName] = useState('Jeff')
+  
+  function addMoney(amount){
+    updateCash((cash)=>cash=cash+amount)
+  }
+
+  function subtractMoney(amount){
+    updateCash((cash)=> cash= cash-amount)
+  }
 
   /*TO DO:
 
   Make item page 
     Edit items to have descriptions
+  Make buyItem function
+
   
   */
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
@@ -34,7 +44,7 @@ function App() {
       {userName==''?<Welcome/>:null}
       <Switch>
       <Route path="/creation-station">
-        <HobbyStore inventory={hobbyInventory} />
+        <HobbyStore subtractMoney={subtractMoney} inventory={hobbyInventory} />
       </Route>
       <Route path="/rockmans-tools">
         <HardwareStore inventory ={hardwareInventory} />

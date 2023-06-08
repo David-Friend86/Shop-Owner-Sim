@@ -13,13 +13,13 @@ const itemStyles  =
     overflowX: 'hidden',
   }
 
-function HobbyStore({inventory}){
+function HobbyStore({inventory, subtractMoney}){
 
     return(
         <div>
             <h1 style={{textAlign:'center'}}>Creation Station</h1>
             <div style={itemStyles}>
-            <ItemContainer items={inventory} /> 
+            <ItemContainer subtractMoney={subtractMoney} items={inventory} /> 
             </div>
         </div>
     )

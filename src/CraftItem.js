@@ -10,3 +10,5 @@ function CraftItem(){
         </div>
     )
 }
+
+export default CraftItem
