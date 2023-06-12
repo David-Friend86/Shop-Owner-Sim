@@ -12,14 +12,14 @@ const itemStyle = {
     textAlign: 'center',
 }
 
-function Item({item, subtractMoney}){
+function Item({item, buyItem}){
     
     return(
         <div style={itemStyle}>
         <h3>{item.name}</h3>
         <img style={{width:'100%', maxWidth:'100px', borderRadius: '15%'}} src={item.image} alt={item.name}></img>
         <h4>{`Price: ${USDollar.format(item.price)}`}</h4>
-        <button onClick={()=>subtractMoney(item)}>Buy</button>
+        <button onClick={()=>buyItem(item)}>Buy</button>
         </div>
     )
 }

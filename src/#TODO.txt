@@ -1,14 +1,14 @@
 TO DO:
 ------FUNCTIONAL---------
+
 make buy item fctn 
 
 implement chat 
 
 make buying / selling item RESTful
 
-make item page (with routing)
+Make a side NavBar
 
-make items have descriptions
 
 Fill out crafting list
 
@@ -16,4 +16,8 @@ Fill out crafting list
 change bg colors on elecronic/tool shop 
 
 add images to the tool shops
+
+change look of the nav bar
+
+
 

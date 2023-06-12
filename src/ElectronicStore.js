@@ -13,13 +13,13 @@ const itemStyles  =
     overflowX: 'hidden',
   }
 
-function ElectronicStore({inventory}){
+function ElectronicStore({inventory, buyItem}){
 
     return(
         <div>
             <h1 style={{textAlign:'center'}}>Gadget Garden</h1>
             <div style={itemStyles}>
-            <ItemContainer items={inventory} className='shopInventory'/> 
+            <ItemContainer buyItem={buyItem} items={inventory} className='shopInventory'/> 
             </div>
         </div>
     )

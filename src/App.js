@@ -19,8 +19,15 @@ import electronicsInventory from './electronicsInventory';
 function App() {
   const [cash, updateCash] =useState(100)
   const [userName, updateName] = useState('Jeff')
+  const [materials, updateMaterials]= useState([])
   
-  
+  useEffect(()=>{
+    fetch('http://localhost:3000/materials')
+    .then(r=>r.json())
+    .then(d=> updateMaterials(d))
+  },[])
+
+
   function addMoney(amount){
     updateCash((cash)=>cash=cash+amount)
   }
@@ -30,25 +37,46 @@ function App() {
     updateCash((cash)=> cash= cash-amount)
   }
 
+  function addToInventory(id){
+    let copy = materials
+    copy[id-1].quantity = copy[id-1].quantity+1;
+    updateMaterials(copy)
+    fetch(`http://localhost:3000/materials/${id}`,{
+      method: 'PATCH',
+      headers: {"Content-Type": "application/json",},
+      body:JSON.stringify({
+        quantity: materials[id-1].quantity
+      })
+      
+    })
+  }
   function buyItem(item){
-
+    if(cash<item.price){
+      alert("Not enough cash!")
+    }
+    else{
+      subtractMoney(item.price)
+      addToInventory(item.id)
+    }
+   
   }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   return (
     <div>
       <h1>Shop-Owner Simulator</h1>
       <Cash cash={cash}/>
+      
       <NavBar/>
       {userName==''?<Welcome/>:null}
       <Switch>
       <Route path="/creation-station">
-        <HobbyStore subtractMoney={subtractMoney} inventory={hobbyInventory} />
+        <HobbyStore buyItem={buyItem} inventory={hobbyInventory} />
       </Route>
       <Route path="/rockmans-tools">
         <HardwareStore inventory ={hardwareInventory} />
       </Route>
       <Route path="/gadget-garden">
-        <ElectronicStore inventory={electronicsInventory} />
+        <ElectronicStore buyItem={buyItem} inventory={electronicsInventory} />
       </Route>
       <Route path="/">
         <Home/>

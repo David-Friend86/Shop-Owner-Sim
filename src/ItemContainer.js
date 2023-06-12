@@ -3,11 +3,11 @@ import Item from './Item'
 
 
 
-function ItemContainer({items, subtractMoney}){
+function ItemContainer({items, buyItem}){
     return(
         <Fragment>
         {items.map((item)=>
-            <Item subtractMoney={subtractMoney} key={item.name} item={item}/>
+            <Item buyItem={buyItem} key={item.name} item={item}/>
         )}
 
         </Fragment>
