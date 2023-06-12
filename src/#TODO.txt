@@ -1,0 +1,19 @@
+TO DO:
+------FUNCTIONAL---------
+make buy item fctn 
+
+implement chat 
+
+make buying / selling item RESTful
+
+make item page (with routing)
+
+make items have descriptions
+
+Fill out crafting list
+
+-------COSMETIC------------
+change bg colors on elecronic/tool shop 
+
+add images to the tool shops
+

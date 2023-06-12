@@ -17,9 +17,9 @@ function Item({item, subtractMoney}){
     return(
         <div style={itemStyle}>
         <h3>{item.name}</h3>
-        <img style={{width:'100%', maxWidth:'100px'}} src={item.image} alt={item.name}></img>
+        <img style={{width:'100%', maxWidth:'100px', borderRadius: '15%'}} src={item.image} alt={item.name}></img>
         <h4>{`Price: ${USDollar.format(item.price)}`}</h4>
-        <button onClick={()=>subtractMoney(item.price)}>Buy</button>
+        <button onClick={()=>subtractMoney(item)}>Buy</button>
         </div>
     )
 }
