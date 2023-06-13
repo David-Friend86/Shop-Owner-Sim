@@ -9,6 +9,7 @@ make buying / selling item RESTful
 
 Make a side NavBar
 
+Create Craft fctn
 
 Fill out crafting list
 

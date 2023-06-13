@@ -18,13 +18,20 @@ import electronicsInventory from './electronicsInventory';
 
 function App() {
   const [cash, updateCash] =useState(100)
-  const [userName, updateName] = useState(['Jeff',`Jeff's Master-crafts`])
+  const [playerInfo, updateName] = useState(['Jeff',`Jeff's Master-crafts`])
   const [materials, updateMaterials]= useState([])
+  const [shopInventory, updateInventory] = useState([])
+
   
   useEffect(()=>{
     fetch('http://localhost:3000/materials')
-    .then(r=>r.json())
-    .then(d=> updateMaterials(d))
+      .then(r=>r.json())
+      .then(d=> updateMaterials(d))
+    
+    fetch('http://localhost:3000/inventory')
+    .then(r=> r.json())
+    .then(d=> updateInventory(d))
+  
   },[])
 
 
@@ -67,7 +74,7 @@ function App() {
       <Cash cash={cash}/>
       
       <NavBar/>
-      {userName==''?<Welcome/>:null}
+      {playerInfo[0]==''?<Welcome/>:null}
       <Switch>
       <Route path="/creation-station">
         <HobbyStore buyItem={buyItem} inventory={hobbyInventory} />
@@ -79,7 +86,7 @@ function App() {
         <ElectronicStore buyItem={buyItem} inventory={electronicsInventory} />
       </Route>
       <Route path="/">
-        <Home/>
+        <Home inventory={shopInventory} storeName={playerInfo[1]}/>
       </Route>
     </Switch>
 

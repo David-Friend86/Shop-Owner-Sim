@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 const USDollar = new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -13,7 +13,9 @@ const itemStyle = {
 }
 
 function Item({item, buyItem}){
-    
+   
+
+
     return(
         <div style={itemStyle}>
         <h3>{item.name}</h3>
