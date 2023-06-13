@@ -18,7 +18,7 @@ import electronicsInventory from './electronicsInventory';
 
 function App() {
   const [cash, updateCash] =useState(100)
-  const [userName, updateName] = useState('Jeff')
+  const [userName, updateName] = useState(['Jeff',`Jeff's Master-crafts`])
   const [materials, updateMaterials]= useState([])
   
   useEffect(()=>{

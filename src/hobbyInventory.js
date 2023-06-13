@@ -2,7 +2,7 @@ const hobbyInventory= [
     {name: 'Cotton' ,
     price: 2.00 ,
     id: 1,
-    image: 'https://lh3.googleusercontent.com/aIHwLQ8xWGT1SggmMnQymK9Q-N4Pv41FpSFKfP8WTgOcrPRafG9NeRT1q8WChIw67f7bVQ=s80',
+    image: 'https://static.wikia.nocookie.net/fantasy-life/images/3/3a/Dandelion_Cotton.png/revision/latest?cb=20141005153752',
     },
 
     {name: 'Straw Thread' ,
