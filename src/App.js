@@ -18,14 +18,8 @@ function App() {
   const [cash, updateCash] =useState(100)
   const [playerInfo, updateName] = useState(['Jeff',`Jeff's Master-crafts`])
   const [materials, updateMaterials]= useState([])
-  const [shopInventory, updateInventory] = useState([])
   const [tools,updateTools]= useState([])
-
-  function handleCrafting(recipe){
-    for(let i=0; i<recipe.length; i++){
-    console.log(`ID: ${recipe[i].id}, Amount: ${recipe[i].amount}`)
-    }
-  }
+  const [shopInventory, updateInventory] = useState([])
 
   function addItem(item){
 
@@ -84,6 +78,53 @@ function App() {
       })
     }
   }
+
+  function removeMaterials(id, amount){
+    let copy = materials
+    copy[id-1].quantity = copy[id-1].quantity-amount;
+    updateMaterials(copy)
+    fetch(`http://localhost:3000/materials/${id}`,{
+      method: 'PATCH',
+      headers: {"Content-Type": "application/json",},
+      body:JSON.stringify({
+        quantity: materials[id-1].quantity
+      })
+    })
+  }
+
+
+
+  function handleCrafting(item){
+    if(tools[item.reqTool[0]-1].owned ==false){
+      alert(`You don't have a ${tools[item.reqTool[0]-1].name} to make this item!`)
+    }
+    for(let i=0; i<item.recipe.length; i++){
+      if(materials[item.recipe[i].id-1].quantity < item.recipe[i].amount){
+        alert(`You don't have enough ${materials[item.recipe[i].id-1].name} to make this item!`)
+        return 1
+      }
+    }
+    item.recipe.forEach(element => {
+      removeMaterials(element.id, element.amount)
+    });
+   addToStore(item)
+  }
+
+  function addToStore(item){
+    let sc = shopInventory
+    sc[item.id-1].amount = sc[item.id-1].amount+1
+    updateInventory(sc)
+
+    fetch(`http://localhost:3000/inventory/${item.id}`,{
+      method: 'PATCH',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        amount:sc[item.id-1].amount
+      })
+
+    })
+  }
+
   
   useEffect(()=>{
     fetch('http://localhost:3000/materials')

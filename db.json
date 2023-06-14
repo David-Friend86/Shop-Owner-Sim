@@ -15,7 +15,7 @@
       "id": 2,
       "name": "Straw Thread",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-53.jpg",
-      "quantity": 0
+      "quantity": 2
     },
     {
       "id": 3,
@@ -33,7 +33,7 @@
       "id": 5,
       "name": "Wool",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-69.jpg ",
-      "quantity": 0
+      "quantity": 4
     },
     {
       "id": 6,
@@ -167,13 +167,13 @@
       "id": 1,
       "name": "Sewing Kit",
       "image": "https://thumbs.dreamstime.com/z/sewing-box-sewing-supplies-9066422.jpg ",
-      "owned": true
+      "owned": false
     },
     {
       "id": 2,
       "name": "Knitting Needle",
       "image": "https://clipart-library.com/newhp/27-277825_knitting-needle-clipart-knitting-needles-png.png ",
-      "owned": false
+      "owned": true
     },
     {
       "id": 3,
@@ -217,7 +217,7 @@
       "id": 1,
       "name": "Winter Scarf",
       "image": "https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-scarf-winter-knitted-scarves-keep-warm-png-image_368028.jpg",
-      "amount": 0,
+      "amount": 9,
       "sellPrice": 10,
       "reqTool": [
         2,

@@ -3,9 +3,12 @@ TO DO:
 
 make buy item fctn 
 
+make the materials menu
+
+
 implement chat 
 
-make buying / selling item RESTful
+
 
 Make a side NavBar
 
@@ -13,8 +16,10 @@ Create Craft fctn
 
 Fill out crafting list
 
+make buying / selling item RESTful
+
 -------COSMETIC------------
-change bg colors on elecronic/tool shop 
+change bg colors on elecronic/tool/home shop 
 
 add images to the tool shops
 
