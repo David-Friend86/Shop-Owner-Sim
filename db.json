@@ -167,7 +167,7 @@
       "id": 1,
       "name": "Sewing Kit",
       "image": "https://thumbs.dreamstime.com/z/sewing-box-sewing-supplies-9066422.jpg ",
-      "owned": false
+      "owned": true
     },
     {
       "id": 2,
@@ -213,54 +213,392 @@
     }
   ],
   "inventory": [
-    { "id":1,
-      "name":"Winter Scarf",
+    {
+      "id": 1,
+      "name": "Winter Scarf",
       "image": "https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-scarf-winter-knitted-scarves-keep-warm-png-image_368028.jpg",
       "amount": 0,
       "sellPrice": 10,
-      "reqTool": 2,
-      "recipe":[ {"id": 2, "amount":3, "image": " "},
-                 {"id": 5, "amount":1, "image": " "}
-                ]
+      "reqTool": [
+        2,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 2,
+          "amount": 3,
+          "image": " "
+        },
+        {
+          "id": 5,
+          "amount": 1,
+          "image": " "
+        }
+      ]
     },
-
-    { "id":2,
-      "name":"Propeller Hat",
+    {
+      "id": 2,
+      "name": "Propeller Hat",
       "image": "https://png.pngtree.com/png-clipart/20200325/ourlarge/pngtree-propeller-color-cap-design-png-image_2165035.jpg",
       "amount": 0,
       "sellPrice": 20,
-      "reqTool": 4,
-      "recipe":[{"id": 9, "amount":4, "image": " "},
-                {"id":22, "amount":1, "image": "https://flashtree.com/cdn/shop/products/3G3A02200120002000_700x700.jpg?v=1614073049"},
-                {"id": 7, "amount":2, "image": " "}
-                ]
+      "reqTool": [
+        4,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 9,
+          "amount": 4,
+          "image": " "
+        },
+        {
+          "id": 22,
+          "amount": 1,
+          "image": "https://flashtree.com/cdn/shop/products/3G3A02200120002000_700x700.jpg?v=1614073049"
+        },
+        {
+          "id": 7,
+          "amount": 2,
+          "image": " "
+        }
+      ]
     },
-
-    { "id":3,
-    "name":"LED Hourglass",
-    "image": "https://cdn.shopify.com/s/files/1/0498/0146/1927/products/EK1886-10_1024x1024.jpg?v=1646809812",
-    "amount": 0,
-    "sellPrice": 25,
-    "reqTool": 5,
-    "recipe":[{"id":19, "amount":5, "image": " "},
-                {"id":20, "amount":1, "image": " "},
-                {"id":23, "amount":1, "image": " "}
-              ]
+    {
+      "id": 3,
+      "name": "LED Hourglass",
+      "image": "https://cdn.shopify.com/s/files/1/0498/0146/1927/products/EK1886-10_1024x1024.jpg?v=1646809812",
+      "amount": 0,
+      "sellPrice": 25,
+      "reqTool": [
+        5,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 19,
+          "amount": 5,
+          "image": " "
+        },
+        {
+          "id": 20,
+          "amount": 1,
+          "image": " "
+        },
+        {
+          "id": 23,
+          "amount": 1,
+          "image": " "
+        }
+      ]
     },
-
-    { "id":4,
-    "name":"Bunny Plushie",
-    "image": "https://i.etsystatic.com/19468294/r/il/392ad8/4586983814/il_fullxfull.4586983814_ev0e.jpg",
-    "amount": 0,
-    "sellPrice": 40,
-    "reqTool": 4,
-    "recipe":[ {"id":14, "amount":2, "image": " "},
-                {"id":15, "amount":2, "image": " "},
-                {"id":11, "amount":3, "image": " "}
-              ]
+    {
+      "id": 4,
+      "name": "Bunny Plushie",
+      "image": "https://i.etsystatic.com/19468294/r/il/392ad8/4586983814/il_fullxfull.4586983814_ev0e.jpg",
+      "amount": 0,
+      "sellPrice": 40,
+      "reqTool": [
+        4,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 14,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 15,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 11,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": " ",
+      "image": " ",
+      "amount": 0,
+      "sellPrice": 0,
+      "reqTool": [
+        0,
+        " "
+      ],
+      "recipe": [
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 2,
+          "image": " "
+        },
+        {
+          "id": 0,
+          "amount": 3,
+          "image": " "
+        }
+      ]
     }
-
-
-    
   ]
 }
