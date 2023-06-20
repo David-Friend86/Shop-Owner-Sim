@@ -21,16 +21,38 @@ function App() {
   const [tools,updateTools]= useState([])
   const [shopInventory, updateInventory] = useState([])
 
-  function addItem(item){
-
+  function handleErrors(res){
+    if(!res.ok){
+      throw Error(res.statusText)
+    }
   }
 
   function addMoney(amount){
-    updateCash((cash)=>cash=cash+amount)
+    const temp = cash + amount
+    updateCash(temp)
+    
+
+    fetch('http://localhost:3000/playerInfo',{
+      method: 'PATCH',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        cash: temp
+      })
+    })
   }
 
   function subtractMoney(amount){
-    updateCash((cash)=> cash= cash-amount)
+    const temp = cash-amount
+    updateCash(temp)
+    console.log(temp)
+     
+    fetch('http://localhost:3000/playerInfo',{
+      method: 'PATCH',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        cash: temp
+      })
+    })
   }
 
   function addToInventory(id){
@@ -44,6 +66,9 @@ function App() {
         quantity: materials[id-1].quantity
       })
     })
+    .then(handleErrors)
+    .then(r=> console.log('error'))
+    .catch(e=> console.log(e))
   }
 
   function buyItem(item){
@@ -92,8 +117,6 @@ function App() {
     })
   }
 
-
-
   function handleCrafting(item){
     if(tools[item.reqTool[0]-1].owned ==false){
       alert(`You don't have a ${tools[item.reqTool[0]-1].name} to make this item!`)
@@ -138,6 +161,10 @@ function App() {
     fetch('http://localhost:3000/tools')
     .then(r=> r.json())
     .then(d=> updateTools(d))
+
+    fetch('http://localhost:3000/playerInfo')
+    .then(r=> r.json())
+    .then(d=> updateCash(d.cash))
   
   },[])
 

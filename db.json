@@ -2,7 +2,7 @@
   "playerInfo": {
     "playerName": " ",
     "storeName": " ",
-    "cash": 100
+    "cash": 942
   },
   "materials": [
     {
@@ -15,7 +15,7 @@
       "id": 2,
       "name": "Straw Thread",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-53.jpg",
-      "quantity": 2
+      "quantity": 7
     },
     {
       "id": 3,
@@ -33,7 +33,7 @@
       "id": 5,
       "name": "Wool",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-69.jpg ",
-      "quantity": 4
+      "quantity": 6
     },
     {
       "id": 6,
@@ -63,25 +63,25 @@
       "id": 10,
       "name": "Marine Silk",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-72.jpg",
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 11,
       "name": "Angelic Cotton",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-68.jpg",
-      "quantity": 0
+      "quantity": 7
     },
     {
       "id": 12,
       "name": "Pink Silk",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-71.jpg",
-      "quantity": 0
+      "quantity": 2
     },
     {
       "id": 13,
       "name": "Starry Thread",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-58.jpg",
-      "quantity": 0
+      "quantity": 6
     },
     {
       "id": 14,
@@ -93,7 +93,7 @@
       "id": 15,
       "name": "Cute Ribbon",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-85.jpg ",
-      "quantity": 0
+      "quantity": 3
     },
     {
       "id": 16,
@@ -123,19 +123,19 @@
       "id": 20,
       "name": "Battery",
       "image": "https://i.etsystatic.com/22139817/r/il/489237/2380184114/il_794xN.2380184114_822j.jpg ",
-      "quantity": 0
+      "quantity": 2
     },
     {
       "id": 21,
       "name": "Wires",
       "image": "https://st2.depositphotos.com/1000674/5586/v/950/depositphotos_55864569-stock-illustration-power-cable.jpg ",
-      "quantity": 0
+      "quantity": 4
     },
     {
       "id": 22,
       "name": "DC Motor",
       "image": "https://flashtree.com/cdn/shop/products/3G3A02200120002000_700x700.jpg?v=1614073049",
-      "quantity": 0
+      "quantity": 5
     },
     {
       "id": 23,
@@ -147,19 +147,19 @@
       "id": 24,
       "name": "Mini LCD Screen",
       "image": "https://cdn.sparkfun.com//assets/parts/7/1/2/3/11377-01a.jpg ",
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 25,
       "name": "Push Button",
       "image": "https://corzotech.com/357-large_default/12mm-push-buttons-10x.jpg",
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 26,
       "name": "Toggle Switch",
       "image": "https://cdn.sparkfun.com//assets/parts/2/7/7/7/09276-1.jpg",
-      "quantity": 0
+      "quantity": 3
     }
   ],
   "tools": [
