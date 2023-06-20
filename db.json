@@ -2,7 +2,7 @@
   "playerInfo": {
     "playerName": " ",
     "storeName": " ",
-    "cash": 942
+    "cash": 671
   },
   "materials": [
     {
@@ -135,7 +135,7 @@
       "id": 22,
       "name": "DC Motor",
       "image": "https://flashtree.com/cdn/shop/products/3G3A02200120002000_700x700.jpg?v=1614073049",
-      "quantity": 5
+      "quantity": 6
     },
     {
       "id": 23,
@@ -159,7 +159,7 @@
       "id": 26,
       "name": "Toggle Switch",
       "image": "https://cdn.sparkfun.com//assets/parts/2/7/7/7/09276-1.jpg",
-      "quantity": 3
+      "quantity": 7
     }
   ],
   "tools": [
@@ -167,7 +167,7 @@
       "id": 1,
       "name": "Sewing Kit",
       "image": "https://thumbs.dreamstime.com/z/sewing-box-sewing-supplies-9066422.jpg ",
-      "owned": false
+      "owned": true
     },
     {
       "id": 2,
@@ -179,7 +179,7 @@
       "id": 3,
       "name": "Paint Kit",
       "image": "https://clipart-library.com/img/899309.jpg",
-      "owned": false
+      "owned": true
     },
     {
       "id": 4,
@@ -203,7 +203,7 @@
       "id": 7,
       "name": "Air Brush",
       "image": "https://previews.123rf.com/images/ivosoier/ivosoier1609/ivosoier160900456/63050508-airbrush-vector-illustration-black-and-white-view.jpg",
-      "owned": false
+      "owned": true
     },
     {
       "id": 8,

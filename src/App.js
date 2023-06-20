@@ -13,6 +13,7 @@ import ElectronicStore from './ElectronicStore';
 import hobbyInventory from './hobbyInventory';
 import hardwareInventory from './hardwareInventory';
 import electronicsInventory from './electronicsInventory';
+import MyMaterials from './MyMaterials';
 
 function App() {
   const [cash, updateCash] =useState(100)
@@ -30,8 +31,6 @@ function App() {
   function addMoney(amount){
     const temp = cash + amount
     updateCash(temp)
-    
-
     fetch('http://localhost:3000/playerInfo',{
       method: 'PATCH',
       headers: {'Content-Type':'application/json'},
@@ -43,9 +42,7 @@ function App() {
 
   function subtractMoney(amount){
     const temp = cash-amount
-    updateCash(temp)
-    console.log(temp)
-     
+    updateCash(temp)  
     fetch('http://localhost:3000/playerInfo',{
       method: 'PATCH',
       headers: {'Content-Type':'application/json'},
@@ -148,7 +145,6 @@ function App() {
     })
   }
 
-  
   useEffect(()=>{
     fetch('http://localhost:3000/materials')
       .then(r=>r.json())
@@ -176,6 +172,7 @@ function App() {
       
       <NavBar/>
       {playerInfo[0]==''?<Welcome/>:null}
+      <MyMaterials materials={materials} tools={tools}/>
       <Switch>
       <Route path="/creation-station">
         <HobbyStore buyItem={buyItem} inventory={hobbyInventory} />
