@@ -5,7 +5,6 @@ function MyNavBar({displayItems}){
         <div>
             <button onClick={()=>displayItems('materials')}>Materials</button>
             <button onClick={()=>displayItems('tools')}>Tools</button>
-            <button>other</button>
         </div>
     )
 }
