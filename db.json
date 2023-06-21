@@ -1,8 +1,9 @@
 {
   "playerInfo": {
+    "id": 1,
     "playerName": " ",
     "storeName": " ",
-    "cash": 140
+    "cash": 383
   },
   "materials": [
     {
@@ -15,7 +16,7 @@
       "id": 2,
       "name": "Straw Thread",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-53.jpg",
-      "quantity": 4
+      "quantity": 99
     },
     {
       "id": 3,
@@ -33,7 +34,7 @@
       "id": 5,
       "name": "Wool",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-69.jpg ",
-      "quantity": 4
+      "quantity": 1
     },
     {
       "id": 6,
@@ -57,7 +58,7 @@
       "id": 9,
       "name": "Silk Thread",
       "image": " ",
-      "quantity": 2
+      "quantity": 99
     },
     {
       "id": 10,
@@ -87,13 +88,13 @@
       "id": 14,
       "name": "Gemstone Buttons",
       "image": " ",
-      "quantity": 0
+      "quantity": 99
     },
     {
       "id": 15,
       "name": "Cute Ribbon",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-85.jpg ",
-      "quantity": 3
+      "quantity": 40
     },
     {
       "id": 16,
@@ -217,7 +218,7 @@
       "id": 1,
       "name": "Winter Scarf",
       "image": "https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-scarf-winter-knitted-scarves-keep-warm-png-image_368028.jpg",
-      "amount": 14,
+      "amount": 64,
       "sellPrice": 10,
       "reqTool": [
         2,
@@ -240,7 +241,7 @@
       "id": 2,
       "name": "Propeller Hat",
       "image": "https://png.pngtree.com/png-clipart/20200325/ourlarge/pngtree-propeller-color-cap-design-png-image_2165035.jpg",
-      "amount": 12,
+      "amount": 64,
       "sellPrice": 20,
       "reqTool": [
         4,
@@ -268,7 +269,7 @@
       "id": 3,
       "name": "LED Hourglass",
       "image": "https://cdn.shopify.com/s/files/1/0498/0146/1927/products/EK1886-10_1024x1024.jpg?v=1646809812",
-      "amount": 11,
+      "amount": 53,
       "sellPrice": 25,
       "reqTool": [
         5,
@@ -296,7 +297,7 @@
       "id": 4,
       "name": "Bunny Plushie",
       "image": "https://i.etsystatic.com/19468294/r/il/392ad8/4586983814/il_fullxfull.4586983814_ev0e.jpg",
-      "amount": 12,
+      "amount": 311,
       "sellPrice": 40,
       "reqTool": [
         4,

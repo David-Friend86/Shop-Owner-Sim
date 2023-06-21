@@ -33,9 +33,14 @@ function App() {
   }
 
   function addMoney(amount){
+    
     const temp = cash + amount
-    updateCash(temp)
-    fetch('http://localhost:3000/playerInfo',{
+
+    console.log(cash)
+    console.log(temp)
+
+    updateCash((cash)=> cash=temp)
+    fetch('http://localhost:3000/playerInfo/',{
       method: 'PATCH',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({
@@ -49,8 +54,8 @@ function App() {
 
   function subtractMoney(amount){
     const temp = cash-amount
-    updateCash(temp)  
-    fetch('http://localhost:3000/playerInfo',{
+    updateCash((cash)=> cash=temp)  
+    fetch('http://localhost:3000/playerInfo/',{
       method: 'PATCH',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({
@@ -159,16 +164,13 @@ function App() {
   function removeFromStore(item){
     let sc = shopInventory
     sc[item.id-1].amount = sc[item.id-1].amount-1
-   
-    updateInventory((shopInventory)=> shopInventory=sc)
-
+    updateInventory(sc)
     fetch(`http://localhost:3000/inventory/${item.id}`,{
       method: 'PATCH',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({
         amount:sc[item.id-1].amount
       })
-
     })
   }
 
@@ -181,7 +183,7 @@ function App() {
       return 0;
     }
     else{
-      addMoney(sold.sellPrice)
+    addMoney(sold.sellPrice)
     removeFromStore(sold)
     notifyMessage(sold)
     }
@@ -201,7 +203,7 @@ function App() {
       sellItem(shopInventory)
     }, 10000);
     return () => clearInterval(interval);
-  }, [shopInventory]);
+  }, [shopInventory, cash]);
 
   useEffect(()=>{
     fetch('http://localhost:3000/materials')
