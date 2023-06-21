@@ -9,11 +9,14 @@ import Home from './Home'
 import HobbyStore from './HobbyStore';
 import HardwareStore from './HardwareStore';
 import ElectronicStore from './ElectronicStore';
+import MyMaterials from './MyMaterials';
+import ChatContainer from './ChatContainer';
 
 import hobbyInventory from './hobbyInventory';
 import hardwareInventory from './hardwareInventory';
 import electronicsInventory from './electronicsInventory';
-import MyMaterials from './MyMaterials';
+import names from './nameArray';
+
 
 function App() {
   const [cash, updateCash] =useState(100)
@@ -21,6 +24,7 @@ function App() {
   const [materials, updateMaterials]= useState([])
   const [tools,updateTools]= useState([])
   const [shopInventory, updateInventory] = useState([])
+  const [chat, updateChat] = useState([])
 
   function handleErrors(res){
     if(!res.ok){
@@ -173,10 +177,24 @@ function App() {
       item.amount >0
     )
     const sold = sellable[Math.floor(Math.random() * sellable.length)]
-    addMoney(sold.sellPrice)
+    if(sold == undefined){
+      return 0;
+    }
+    else{
+      addMoney(sold.sellPrice)
     removeFromStore(sold)
-    console.log(`Someone bought a ${sold.name}`)
+    notifyMessage(sold)
+    }
+    
   }
+
+
+  function notifyMessage(item){
+    const cc = chat
+    cc.push(`${names[Math.floor(Math.random() * names.length)]} just bought a ${item.name}!`)
+    updateChat((chat)=> chat=cc)
+  }
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -184,8 +202,6 @@ function App() {
     }, 10000);
     return () => clearInterval(interval);
   }, [shopInventory]);
-
-  
 
   useEffect(()=>{
     fetch('http://localhost:3000/materials')
@@ -210,6 +226,8 @@ function App() {
     <div>
       <h1 style={{textAlign:'center'}}>Shop-Owner Simulator</h1>
       <Cash cash={cash}/>
+      <h3>broke? click this---{'>'}<button onClick={()=>addMoney(1)}>$1.00</button> </h3>
+      <ChatContainer messages={chat}/>
       <NavBar storeName={playerInfo[1]}/>
       {playerInfo[0]==''?<Welcome/>:null}
       <MyMaterials materials={materials} tools={tools}/>

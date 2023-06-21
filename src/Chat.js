@@ -1,8 +1,8 @@
 import React from "react";
 
-function Chat(){
+function Chat({message}){
     return (
-        <h2>Messages</h2>
+        <h4 style={{display: 'inline-block', padding: '10px'}}>{message}</h4>
     )
 }
 

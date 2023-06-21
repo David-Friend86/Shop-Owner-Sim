@@ -2,7 +2,7 @@
   "playerInfo": {
     "playerName": " ",
     "storeName": " ",
-    "cash": 650.5
+    "cash": 140
   },
   "materials": [
     {
@@ -15,7 +15,7 @@
       "id": 2,
       "name": "Straw Thread",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-53.jpg",
-      "quantity": 1
+      "quantity": 4
     },
     {
       "id": 3,
@@ -33,7 +33,7 @@
       "id": 5,
       "name": "Wool",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-69.jpg ",
-      "quantity": 1
+      "quantity": 4
     },
     {
       "id": 6,
@@ -217,7 +217,7 @@
       "id": 1,
       "name": "Winter Scarf",
       "image": "https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-scarf-winter-knitted-scarves-keep-warm-png-image_368028.jpg",
-      "amount": 9,
+      "amount": 14,
       "sellPrice": 10,
       "reqTool": [
         2,
@@ -240,7 +240,7 @@
       "id": 2,
       "name": "Propeller Hat",
       "image": "https://png.pngtree.com/png-clipart/20200325/ourlarge/pngtree-propeller-color-cap-design-png-image_2165035.jpg",
-      "amount": 0,
+      "amount": 12,
       "sellPrice": 20,
       "reqTool": [
         4,
@@ -268,7 +268,7 @@
       "id": 3,
       "name": "LED Hourglass",
       "image": "https://cdn.shopify.com/s/files/1/0498/0146/1927/products/EK1886-10_1024x1024.jpg?v=1646809812",
-      "amount": 0,
+      "amount": 11,
       "sellPrice": 25,
       "reqTool": [
         5,
@@ -296,7 +296,7 @@
       "id": 4,
       "name": "Bunny Plushie",
       "image": "https://i.etsystatic.com/19468294/r/il/392ad8/4586983814/il_fullxfull.4586983814_ev0e.jpg",
-      "amount": 0,
+      "amount": 12,
       "sellPrice": 40,
       "reqTool": [
         4,
