@@ -12,7 +12,7 @@ const linkStyles = {
   };
 
 
-function NavBar(){
+function NavBar({storeName}){
 
     return(
         <Fragment>
@@ -21,7 +21,7 @@ function NavBar(){
         exact
         style={linkStyles}
         activeStyle ={{background: 'darkblue'}}
-        >Your Store</NavLink>
+        >{storeName}</NavLink>
 
         <NavLink
         to='/creation-station'

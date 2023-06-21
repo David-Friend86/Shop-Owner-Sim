@@ -38,6 +38,9 @@ function App() {
         cash: temp
       })
     })
+    .then(handleErrors)
+    .then(r=> console.log('error'))
+    .catch(e=> console.log(e))
   }
 
   function subtractMoney(amount){
@@ -50,6 +53,9 @@ function App() {
         cash: temp
       })
     })
+    .then(handleErrors)
+    .then(r=> console.log('error'))
+    .catch(e=> console.log(e))
   }
 
   function addToInventory(id){
@@ -73,7 +79,7 @@ function App() {
       alert("Not enough cash!")
     }
     else{
-      subtractMoney(item.price)
+     subtractMoney(item.price)
       addToInventory(item.id)
     }
    
@@ -133,7 +139,8 @@ function App() {
   function addToStore(item){
     let sc = shopInventory
     sc[item.id-1].amount = sc[item.id-1].amount+1
-    updateInventory(sc)
+   
+    updateInventory((shopInventory)=> shopInventory=sc)
 
     fetch(`http://localhost:3000/inventory/${item.id}`,{
       method: 'PATCH',
@@ -144,6 +151,41 @@ function App() {
 
     })
   }
+
+  function removeFromStore(item){
+    let sc = shopInventory
+    sc[item.id-1].amount = sc[item.id-1].amount-1
+   
+    updateInventory((shopInventory)=> shopInventory=sc)
+
+    fetch(`http://localhost:3000/inventory/${item.id}`,{
+      method: 'PATCH',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        amount:sc[item.id-1].amount
+      })
+
+    })
+  }
+
+  function sellItem(inventory){
+    const sellable = inventory.filter((item)=>
+      item.amount >0
+    )
+    const sold = sellable[Math.floor(Math.random() * sellable.length)]
+    addMoney(sold.sellPrice)
+    removeFromStore(sold)
+    console.log(`Someone bought a ${sold.name}`)
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      sellItem(shopInventory)
+    }, 10000);
+    return () => clearInterval(interval);
+  }, [shopInventory]);
+
+  
 
   useEffect(()=>{
     fetch('http://localhost:3000/materials')
@@ -161,18 +203,17 @@ function App() {
     fetch('http://localhost:3000/playerInfo')
     .then(r=> r.json())
     .then(d=> updateCash(d.cash))
-  
   },[])
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   return (
     <div>
-      <h1>Shop-Owner Simulator</h1>
+      <h1 style={{textAlign:'center'}}>Shop-Owner Simulator</h1>
       <Cash cash={cash}/>
-      
-      <NavBar/>
+      <NavBar storeName={playerInfo[1]}/>
       {playerInfo[0]==''?<Welcome/>:null}
       <MyMaterials materials={materials} tools={tools}/>
+
       <Switch>
       <Route path="/creation-station">
         <HobbyStore buyItem={buyItem} inventory={hobbyInventory} />
@@ -186,9 +227,7 @@ function App() {
       <Route path="/">
         <Home inventory={shopInventory} storeName={playerInfo[1]} handleCrafting={handleCrafting}/>
       </Route>
-    </Switch>
-
-      
+    </Switch>  
   </div>
   );
 }

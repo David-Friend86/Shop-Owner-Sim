@@ -12,11 +12,11 @@ implement chat
 
 Make a side NavBar
 
-Create Craft fctn
+Fix bug where the inventory doesn't update the amount until it's reset
 
 Fill out crafting list
 
-make buying / selling item RESTful
+make buying / selling item RESTful (buying yes, selling no..)
 
 -------COSMETIC------------
 change bg colors on elecronic/tool/home shop 
@@ -24,6 +24,5 @@ change bg colors on elecronic/tool/home shop
 add images to the tool shops
 
 change look of the nav bar
-
 
 

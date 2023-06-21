@@ -3,8 +3,6 @@ import MyMaterialsContainer from "./MyMaterialsContainter.js";
 import MyNavBar from "./MyNavBar.js"
 import MyToolsContainer from "./MyToolsContainer.js";
 
-
-
 const style = {
     display: 'grid',
     float: 'right',
@@ -12,9 +10,6 @@ const style = {
     width: '500px',
     justifyItems: 'center',
 }
-
-
-
 
 
 function MyMaterials({materials, tools}){
