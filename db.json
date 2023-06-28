@@ -1,9 +1,8 @@
 {
   "playerInfo": {
     "id": 1,
-    "playerName": " ",
-    "storeName": " ",
-    "cash": 29315
+    "storeName": "",
+    "cash": 29355
   },
   "materials": [
     {
@@ -70,7 +69,7 @@
       "id": 11,
       "name": "Angelic Cotton",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-68.jpg",
-      "quantity": 7
+      "quantity": 4
     },
     {
       "id": 12,
@@ -88,13 +87,13 @@
       "id": 14,
       "name": "Gemstone Buttons",
       "image": " ",
-      "quantity": 99
+      "quantity": 97
     },
     {
       "id": 15,
       "name": "Cute Ribbon",
       "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-85.jpg ",
-      "quantity": 40
+      "quantity": 38
     },
     {
       "id": 16,

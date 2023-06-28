@@ -20,7 +20,7 @@ import names from './nameArray';
 
 function App() {
   const [cash, updateCash] =useState(100)
-  const [playerInfo, updateInfo] = useState(['',''])
+  const [playerInfo, updateInfo] = useState('')
   const [materials, updateMaterials]= useState([])
   const [tools,updateTools]= useState([])
   const [shopInventory, updateInventory] = useState([])
@@ -32,16 +32,23 @@ function App() {
     }
   }
 
-  function handleSubmit(event,name,shop){
+  function handleSubmit(event,shop){
     event.preventDefault()
-    const temp = [name,shop]
-    console.log(temp)
-    updateInfo(temp)
+    updateInfo(shop)
+    fetch('http://localhost:3000/playerInfo/',{
+      method: 'PATCH',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        storeName: shop
+      })
+    })
+    .then(handleErrors)
+    .catch(e=> console.log(e))
   }
 
   function addMoney(amount){
     const temp = cash + amount
-    updateCash((cash)=> cash=temp)
+    updateCash((cash) => cash=temp)
     fetch('http://localhost:3000/playerInfo/',{
       method: 'PATCH',
       headers: {'Content-Type':'application/json'},
@@ -50,7 +57,6 @@ function App() {
       })
     })
     .then(handleErrors)
-    .then(r=> console.log('error'))
     .catch(e=> console.log(e))
   }
 
@@ -65,7 +71,6 @@ function App() {
       })
     })
     .then(handleErrors)
-    .then(r=> console.log('error'))
     .catch(e=> console.log(e))
   }
 
@@ -81,7 +86,6 @@ function App() {
       })
     })
     .then(handleErrors)
-    .then(r=> console.log('error'))
     .catch(e=> console.log(e))
   }
 
@@ -222,19 +226,21 @@ function App() {
 
     fetch('http://localhost:3000/playerInfo')
     .then(r=> r.json())
-    .then(d=> updateCash(d.cash))
+    .then(d=> {
+      updateInfo(d.storeName)
+      updateCash(d.cash)})
   },[])
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   return (
     <div>
       <h1 style={{textAlign:'center'}}>Shop-Owner Simulator</h1>
+      {playerInfo==""?<Welcome handleSubmit={handleSubmit}/>:
+      <Fragment>
       <Cash cash={cash}/>
       <h3>broke? click this---{'>'}<button onClick={()=>addMoney(1)}>$1.00</button> </h3>
       <ChatContainer messages={chat}/>
-      <NavBar storeName={playerInfo[1]}/>
-      {playerInfo[0]==''?<Welcome handleSubmit={handleSubmit}/>:
-      <Fragment>
+      <NavBar storeName={playerInfo}/>
       <MyMaterials materials={materials} tools={tools}/>
       <Switch>
       <Route path="/creation-station">
@@ -247,7 +253,7 @@ function App() {
         <ElectronicStore buyItem={buyItem} inventory={electronicsInventory} />
       </Route>
       <Route path="/">
-        <Home inventory={shopInventory} storeName={playerInfo[1]} handleCrafting={handleCrafting}/>
+        <Home inventory={shopInventory} storeName={playerInfo} handleCrafting={handleCrafting}/>
       </Route>
     </Switch> 
     </Fragment> 
