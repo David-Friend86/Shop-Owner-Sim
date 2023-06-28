@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import {Route, Switch } from "react-router-dom";
 import Welcome from './Welcome'
 import NavBar from './NavBar'
@@ -20,7 +20,7 @@ import names from './nameArray';
 
 function App() {
   const [cash, updateCash] =useState(100)
-  const [playerInfo, updateName] = useState(['Jeff',`Jeff's Master-crafts`])
+  const [playerInfo, updateInfo] = useState(['',''])
   const [materials, updateMaterials]= useState([])
   const [tools,updateTools]= useState([])
   const [shopInventory, updateInventory] = useState([])
@@ -32,13 +32,15 @@ function App() {
     }
   }
 
-  function addMoney(amount){
-    
-    const temp = cash + amount
-
-    console.log(cash)
+  function handleSubmit(event,name,shop){
+    event.preventDefault()
+    const temp = [name,shop]
     console.log(temp)
+    updateInfo(temp)
+  }
 
+  function addMoney(amount){
+    const temp = cash + amount
     updateCash((cash)=> cash=temp)
     fetch('http://localhost:3000/playerInfo/',{
       method: 'PATCH',
@@ -231,9 +233,9 @@ function App() {
       <h3>broke? click this---{'>'}<button onClick={()=>addMoney(1)}>$1.00</button> </h3>
       <ChatContainer messages={chat}/>
       <NavBar storeName={playerInfo[1]}/>
-      {playerInfo[0]==''?<Welcome/>:null}
+      {playerInfo[0]==''?<Welcome handleSubmit={handleSubmit}/>:
+      <Fragment>
       <MyMaterials materials={materials} tools={tools}/>
-
       <Switch>
       <Route path="/creation-station">
         <HobbyStore buyItem={buyItem} inventory={hobbyInventory} />
@@ -247,7 +249,9 @@ function App() {
       <Route path="/">
         <Home inventory={shopInventory} storeName={playerInfo[1]} handleCrafting={handleCrafting}/>
       </Route>
-    </Switch>  
+    </Switch> 
+    </Fragment> 
+      }
   </div>
   );
 }

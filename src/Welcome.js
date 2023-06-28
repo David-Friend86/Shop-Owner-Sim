@@ -1,13 +1,16 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
-function Welcome(){
+function Welcome({handleSubmit}){
+    const [name, updateName] = useState('')
+    const [shop, updateShop] = useState('')
 
     return(
         <Fragment>
-            <h1>Enter your name</h1>
-            <input type="text" placeholder="Name..."></input>
-            <br></br>
-            <button type="submit">Submit</button>
+            <form onSubmit={(event)=>handleSubmit( event,name,shop)}>
+                <input type="text" placeholder="Enter name..." onChange={(e)=>updateName(e.target.value)}></input>
+                <input type="text" placeholder="Enter Shop name..." onChange={(e)=> updateShop(e.target.value)}></input>
+                <input type="submit"></input>
+            </form>
         </Fragment>
     )
 }
