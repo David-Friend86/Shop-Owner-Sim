@@ -33,6 +33,21 @@ function App() {
     }
   }
 
+  function handleDelete(item){
+    if (window.confirm("Remove this item from your shop?") == true) {
+      const temp = shopInventory.filter((inventory)=> inventory.id != item.id)
+      updateInventory(temp)
+
+      fetch(`http://localhost:3000/inventory/${item.id}`,{
+        method: 'DELETE',
+        headers:{
+          'Content-type':'application/json'
+        }
+      })
+    }
+
+  }
+
   function handleSubmit(event,shop){
     event.preventDefault()
     updateInfo(shop)
@@ -273,7 +288,7 @@ function App() {
         <AddItem materials={materials} tools={tools} addNewItem={addNewItem}/>
       </Route>
       <Route path="/">
-        <Home inventory={shopInventory} storeName={playerInfo} handleCrafting={handleCrafting}/>
+        <Home inventory={shopInventory} storeName={playerInfo} handleCrafting={handleCrafting} handleDelete={handleDelete}/>
       </Route>
     </Switch> 
     </Fragment> 

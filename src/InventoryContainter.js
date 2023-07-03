@@ -13,13 +13,13 @@ const itemStyle = {
     
   }
 
-function InventoryContainer({inventory, handleCrafting}){
+function InventoryContainer({inventory, handleCrafting, handleDelete}){
 
     return(
         <div style={{display:'grid', justifyContent:'center'}}>
         <div style={itemStyle}>
         {inventory.map((item)=>
-        <Inventory handleCrafting={handleCrafting} key={item.id} item ={item}/>
+        <Inventory handleDelete={handleDelete} handleCrafting={handleCrafting} key={item.id} item ={item}/>
         )}
         </div>
         </div>
