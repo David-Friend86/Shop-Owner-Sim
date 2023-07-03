@@ -238,7 +238,7 @@ function App() {
       {playerInfo==""?<Welcome handleSubmit={handleSubmit}/>:
       <Fragment>
       <Cash cash={cash}/>
-      <h3>broke? click this---{'>'}<button onClick={()=>addMoney(1)}>$1.00</button> </h3>
+      <h3>broke? click this---{'>'}<button onClick={()=>addMoney(1)}>+$1.00</button> </h3>
       <ChatContainer messages={chat}/>
       <NavBar storeName={playerInfo}/>
       <MyMaterials materials={materials} tools={tools}/>

@@ -1,14 +1,14 @@
 {
   "playerInfo": {
     "id": 1,
-    "storeName": "",
-    "cash": 29355
+    "storeName": "My Shop",
+    "cash": 29362
   },
   "materials": [
     {
       "id": 1,
       "name": "Cotton",
-      "image": "https://lh3.googleusercontent.com/aIHwLQ8xWGT1SggmMnQymK9Q-N4Pv41FpSFKfP8WTgOcrPRafG9NeRT1q8WChIw67f7bVQ=s80",
+      "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-66.jpg",
       "quantity": 4
     },
     {
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "name": "Silk",
-      "image": " ",
+      "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-77.jpg",
       "quantity": 0
     },
     {
@@ -38,13 +38,13 @@
     {
       "id": 6,
       "name": "Cashmere",
-      "image": " ",
+      "image": "https://i.imgur.com/rwJkjDz.png",
       "quantity": 0
     },
     {
       "id": 7,
       "name": "Linen",
-      "image": " ",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQbralCGdrJZFzIsEugnxG5aI0_QYsM8YQEjz2d5DRH51LP_MwujoGhrLFGb6Fedg6-X0wNU9vwdX9Wx57SHifiZ7qr8PxD8s1NsFnmEbqnQsnYs7tRyoKt2A&usqp=CAE",
       "quantity": 2
     },
     {
@@ -56,7 +56,7 @@
     {
       "id": 9,
       "name": "Silk Thread",
-      "image": " ",
+      "image": "https://i.imgur.com/PbhFbeE.png",
       "quantity": 99
     },
     {
@@ -86,7 +86,7 @@
     {
       "id": 14,
       "name": "Gemstone Buttons",
-      "image": " ",
+      "image": "https://i.etsystatic.com/9718575/r/il/de7b4b/1308920422/il_570xN.1308920422_s54e.jpg",
       "quantity": 97
     },
     {
@@ -98,7 +98,7 @@
     {
       "id": 16,
       "name": "Divine Cashmere",
-      "image": " ",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQD8JSEcW7Ko8hQRGR5Ow4rzxFUutjRt68Z2Wib8-KvzsS0zgvA9CgOcNGNMdkbb0wAEbav2gSAkCNNzEOhLORdHqnLT8JzKvUt2lAaRQM&usqp=CAE",
       "quantity": 0
     },
     {
@@ -122,7 +122,7 @@
     {
       "id": 20,
       "name": "Battery",
-      "image": "https://i.etsystatic.com/22139817/r/il/489237/2380184114/il_794xN.2380184114_822j.jpg ",
+      "image": "https://i.etsystatic.com/22139817/r/il/489237/2380184114/il_794xN.2380184114_822j.jpg",
       "quantity": 2
     },
     {
@@ -221,18 +221,18 @@
       "sellPrice": 10,
       "reqTool": [
         2,
-        " "
+        "https://clipart-library.com/newhp/27-277825_knitting-needle-clipart-knitting-needles-png.png"
       ],
       "recipe": [
         {
           "id": 2,
           "amount": 3,
-          "image": " "
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-79.jpg"
         },
         {
           "id": 5,
           "amount": 1,
-          "image": " "
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-69.jpg"
         }
       ]
     },
@@ -244,13 +244,13 @@
       "sellPrice": 20,
       "reqTool": [
         4,
-        " "
+        "https://classroomclipart.com/image/static7/preview2/sewing-machine-136-clipart-49462.jpg"
       ],
       "recipe": [
         {
           "id": 9,
           "amount": 4,
-          "image": " "
+          "image": "https://i.imgur.com/PbhFbeE.png"
         },
         {
           "id": 22,
@@ -260,7 +260,7 @@
         {
           "id": 7,
           "amount": 2,
-          "image": " "
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQbralCGdrJZFzIsEugnxG5aI0_QYsM8YQEjz2d5DRH51LP_MwujoGhrLFGb6Fedg6-X0wNU9vwdX9Wx57SHifiZ7qr8PxD8s1NsFnmEbqnQsnYs7tRyoKt2A&usqp=CAE"
         }
       ]
     },
@@ -272,23 +272,23 @@
       "sellPrice": 25,
       "reqTool": [
         5,
-        " "
+        "https://img.freepik.com/premium-vector/soldering-iron-cartoon-design_274619-1333.jpg?w=2000"
       ],
       "recipe": [
         {
           "id": 19,
           "amount": 5,
-          "image": " "
+          "image": "https://www.pcboard.ca/image/cache/catalog/products/leds/5mm_leds/frosted-leds-red-green-blue-yellow-white-800x800.jpg"
         },
         {
           "id": 20,
           "amount": 1,
-          "image": " "
+          "image": "https://i.etsystatic.com/22139817/r/il/489237/2380184114/il_794xN.2380184114_822j.jpg"
         },
         {
           "id": 23,
           "amount": 1,
-          "image": " "
+          "image": "https://www.jameco.com/Jameco/Products/MakeImag/2302983.jpg"
         }
       ]
     },
@@ -300,303 +300,283 @@
       "sellPrice": 40,
       "reqTool": [
         4,
-        " "
+        "https://classroomclipart.com/image/static7/preview2/sewing-machine-136-clipart-49462.jpg"
       ],
       "recipe": [
         {
           "id": 14,
           "amount": 2,
-          "image": " "
+          "image": "https://i.etsystatic.com/9718575/r/il/de7b4b/1308920422/il_570xN.1308920422_s54e.jpg"
         },
         {
           "id": 15,
           "amount": 2,
-          "image": " "
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-85.jpg"
         },
         {
           "id": 11,
           "amount": 3,
-          "image": " "
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-68.jpg"
         }
       ]
     },
     {
       "id": 5,
-      "name": " ",
-      "image": " ",
+      "name": "Electronic Sleep Mask",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpilUvlOAuSUqLzpiDcvA23WccQiAI1Z_SnSURsRceD9Z4i4bIxACv8Qhbwgp16X4ojJI&usqp=CAU",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 25,
       "reqTool": [
-        0,
-        " "
+        4,
+        "https://classroomclipart.com/image/static7/preview2/sewing-machine-136-clipart-49462.jpg"
       ],
       "recipe": [
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
-          "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
+          "id": 12,
           "amount": 3,
-          "image": " "
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-71.jpg"
+        },
+        {
+          "id": 23,
+          "amount": 2,
+          "image": "https://www.jameco.com/Jameco/Products/MakeImag/2302983.jpg"
+        },
+        {
+          "id": 25,
+          "amount": 3,
+          "image": "https://corzotech.com/357-large_default/12mm-push-buttons-10x.jpg"
         }
       ]
     },
     {
       "id": 6,
-      "name": " ",
-      "image": " ",
+      "name": "Keychain Flashlight",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqGBQpg49pT_ooB_5_D6HKMzY0kzy6iSQpWw&usqp=CAU",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 10,
       "reqTool": [
-        0,
-        " "
+        5,
+        "https://img.freepik.com/premium-vector/soldering-iron-cartoon-design_274619-1333.jpg?w=2000"
       ],
       "recipe": [
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
+          "id": 20,
+          "amount": 1,
+          "image": "https://i.etsystatic.com/22139817/r/il/489237/2380184114/il_794xN.2380184114_822j.jpg"
         },
         {
-          "id": 0,
+          "id": 19,
           "amount": 2,
-          "image": " "
+          "image": "https://www.pcboard.ca/image/cache/catalog/products/leds/5mm_leds/frosted-leds-red-green-blue-yellow-white-800x800.jpg"
         },
         {
-          "id": 0,
-          "amount": 3,
-          "image": " "
+          "id": 13,
+          "amount": 2,
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-58.jpg"
         }
       ]
     },
     {
       "id": 7,
-      "name": " ",
-      "image": " ",
+      "name": "Toy Car",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcLq15FkWKMQY0gl2qsAP1i3FzcChoxWwH7A&usqp=CAU",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 24.50,
       "reqTool": [
-        0,
-        " "
+        8,
+        "https://clipart-library.com/newhp/9-91675_similar-cliparts-saw-clipart.png"
       ],
       "recipe": [
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
+          "id": 17,
+          "amount": 4,
+          "image": "https://i5.walmartimages.com/asr/57f41f68-6970-4db9-9a75-a587af0b8a6f.dcfd730d94cb708f2882bf794ffe3f7d.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
         },
         {
-          "id": 0,
+          "id": 22,
           "amount": 2,
-          "image": " "
+          "image": "https://flashtree.com/cdn/shop/products/3G3A02200120002000_700x700.jpg?v=1614073049"
         },
         {
-          "id": 0,
-          "amount": 3,
-          "image": " "
+          "id": 18,
+          "amount": 4,
+          "image": "https://thumbs.dreamstime.com/b/wood-planks-illustration-white-background-53658968.jpg"
         }
       ]
     },
     {
       "id": 8,
-      "name": " ",
-      "image": " ",
+      "name": "Wooden Painting",
+      "image": "https://i.pinimg.com/564x/ea/d2/b5/ead2b5ba8ce38968af7d2116cedcb595.jpg",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 19.25,
       "reqTool": [
-        0,
-        " "
+        3,
+        "https://clipart-library.com/img/899309.jpg"
       ],
       "recipe": [
         {
-          "id": 0,
+          "id": 18,
           "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
-          "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
-          "amount": 3,
-          "image": " "
+          "image": "https://thumbs.dreamstime.com/b/wood-planks-illustration-white-background-53658968.jpg"
         }
       ]
     },
     {
       "id": 9,
-      "name": " ",
-      "image": " ",
+      "name": "Painted Figurine",
+      "image": "https://www.m.derivefigurine.com/110270-home_default/figure-kanade-tachibana-key-20th-anniversary-gothic-lolita-repaint.jpg",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 47,
       "reqTool": [
-        0,
-        " "
+        7,
+        "https://previews.123rf.com/images/ivosoier/ivosoier1609/ivosoier160900456/63050508-airbrush-vector-illustration-black-and-white-view.jpg"
       ],
       "recipe": [
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
+          "id": 18,
+          "amount": 5,
+          "image": "https://thumbs.dreamstime.com/b/wood-planks-illustration-white-background-53658968.jpg"
         },
         {
-          "id": 0,
+          "id": 11,
           "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
-          "amount": 3,
-          "image": " "
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-68.jpg"
         }
       ]
     },
     {
       "id": 10,
-      "name": " ",
-      "image": " ",
+      "name": "Engraved Wood Portrait",
+      "image": "https://i.stack.imgur.com/5tnpi.jpg",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 32,
       "reqTool": [
-        0,
-        " "
+        6,
+        "https://www.creativefabrica.com/wp-content/uploads/2023/02/18/1676705167/Rotary-Tool-580x386.jpg"
       ],
       "recipe": [
         {
-          "id": 0,
+          "id": 18,
           "amount": 2,
-          "image": " "
+          "image": "https://thumbs.dreamstime.com/b/wood-planks-illustration-white-background-53658968.jpg"
         },
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
-          "amount": 3,
-          "image": " "
+          "id": 14,
+          "amount": 6,
+          "image": "https://i.etsystatic.com/9718575/r/il/de7b4b/1308920422/il_570xN.1308920422_s54e.jpg"
         }
       ]
     },
     {
       "id": 11,
-      "name": " ",
-      "image": " ",
+      "name": "Bunny Sew-on Patch",
+      "image": "https://i5.walmartimages.com/asr/26a1a50b-8cc0-43c5-98e0-25992384cb0b.328e5eee99fdde506509d0df3dfb611f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 10,
       "reqTool": [
-        0,
-        " "
+        1,
+        "https://thumbs.dreamstime.com/z/sewing-box-sewing-supplies-9066422.jpg"
       ],
       "recipe": [
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
-          "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
+          "id": 9,
           "amount": 3,
-          "image": " "
+          "image": "https://i.imgur.com/PbhFbeE.png"
+        },
+        {
+          "id": 11,
+          "amount": 2,
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-68.jpg"
+        },
+        {
+          "id": 7,
+          "amount": 1,
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQbralCGdrJZFzIsEugnxG5aI0_QYsM8YQEjz2d5DRH51LP_MwujoGhrLFGb6Fedg6-X0wNU9vwdX9Wx57SHifiZ7qr8PxD8s1NsFnmEbqnQsnYs7tRyoKt2A&usqp=CAE"
         }
       ]
     },
     {
       "id": 12,
-      "name": " ",
-      "image": " ",
+      "name": "LED Tie",
+      "image": "https://cdn-learn.adafruit.com/assets/assets/000/004/454/medium800/flora_Screen_Shot_2013-02-27_at_6.55.20_AM.png?1396813324",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 22,
       "reqTool": [
-        0,
-        " "
+        4,
+        "https://classroomclipart.com/image/static7/preview2/sewing-machine-136-clipart-49462.jpg"
       ],
       "recipe": [
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
+          "id": 19,
+          "amount": 10,
+          "image": "https://www.pcboard.ca/image/cache/catalog/products/leds/5mm_leds/frosted-leds-red-green-blue-yellow-white-800x800.jpg"
         },
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
-        },
-        {
-          "id": 0,
+          "id": 10,
           "amount": 3,
-          "image": " "
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-72.jpg"
+        },
+        {
+          "id": 13,
+          "amount": 3,
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-58.jpg"
         }
       ]
     },
     {
       "id": 13,
-      "name": " ",
-      "image": " ",
+      "name": "LED Tree",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdthkQhjJ_dvI1jGPnFTxTKQ6zZXaqn0Rh7CkuEC82OMnvEY-LzlCmAlpbHnEEEQsn37U&usqp=CAU",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 21.50,
       "reqTool": [
-        0,
-        " "
+        5,
+        "https://img.freepik.com/premium-vector/soldering-iron-cartoon-design_274619-1333.jpg?w=2000"
       ],
       "recipe": [
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
+          "id": 26,
+          "amount": 1,
+          "image": "https://cdn.sparkfun.com//assets/parts/2/7/7/7/09276-1.jpg"
         },
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
+          "id": 21,
+          "amount": 10,
+          "image": "https://st2.depositphotos.com/1000674/5586/v/950/depositphotos_55864569-stock-illustration-power-cable.jpg"
         },
         {
-          "id": 0,
-          "amount": 3,
-          "image": " "
+          "id": 19,
+          "amount": 15,
+          "image": "https://www.pcboard.ca/image/cache/catalog/products/leds/5mm_leds/frosted-leds-red-green-blue-yellow-white-800x800.jpg"
         }
       ]
     },
     {
       "id": 14,
-      "name": " ",
-      "image": " ",
+      "name": "Luxury Bathrobe",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvojn0MMtZoFAIa142Y-xZOwZbwyWbtfRJp93HxHAcVCbWLd4Po87x4mDK9LHkqbAOoHw&usqp=CAU",
       "amount": 0,
-      "sellPrice": 0,
+      "sellPrice": 70,
       "reqTool": [
-        0,
-        " "
+        4,
+        "https://classroomclipart.com/image/static7/preview2/sewing-machine-136-clipart-49462.jpg"
       ],
       "recipe": [
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
+          "id": 16,
+          "amount": 5,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQD8JSEcW7Ko8hQRGR5Ow4rzxFUutjRt68Z2Wib8-KvzsS0zgvA9CgOcNGNMdkbb0wAEbav2gSAkCNNzEOhLORdHqnLT8JzKvUt2lAaRQM&usqp=CAE"
         },
         {
-          "id": 0,
-          "amount": 2,
-          "image": " "
+          "id": 13,
+          "amount": 8,
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-58.jpg"
         },
         {
-          "id": 0,
-          "amount": 3,
-          "image": " "
+          "id": 8,
+          "amount": 6,
+          "image": "http://fantasylife.info/projects/main/upload/items_crop/materials/image-80.jpg"
         }
       ]
     }

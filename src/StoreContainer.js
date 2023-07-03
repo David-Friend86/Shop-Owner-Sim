@@ -7,7 +7,7 @@ const itemStyles  =
     height: '600px',
     display: 'grid',
     gridGap: '20px',
-    gridTemplateColumns: 'repeat(4, 200px)',
+    gridTemplateColumns: 'repeat(5, 200px)',
     justifyContent: 'space-evenly',
     backgroundColor: '#e9ccff',
     overflowX: 'hidden',

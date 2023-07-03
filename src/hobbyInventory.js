@@ -2,7 +2,7 @@ const hobbyInventory= [
     {name: 'Cotton' ,
     price: 2.00 ,
     id: 1,
-    image: 'https://static.wikia.nocookie.net/fantasy-life/images/3/3a/Dandelion_Cotton.png/revision/latest?cb=20141005153752',
+    image: 'http://fantasylife.info/projects/main/upload/items_crop/materials/image-66.jpg',
     },
 
     {name: 'Straw Thread' ,
@@ -20,7 +20,7 @@ const hobbyInventory= [
     {name: 'Silk' ,
     price: 2.75 ,
     id: 4, 
-    image: 'https://lh3.googleusercontent.com/yZRSbRZ390F9h-fz2tAZRaa5cOqZZlHwTNhpCpJyFfk82DXToriGHKbMrPcZowfZpxv2aFw=s80',
+    image: 'http://fantasylife.info/projects/main/upload/items_crop/materials/image-77.jpg',
     },
     
     {name: 'Wool' ,
@@ -32,13 +32,13 @@ const hobbyInventory= [
     {name: 'Cashmere' ,
     price:  6.00,
     id: 6,
-    image: 'https://lh3.googleusercontent.com/AlE_YhlCbYxWMV6HYGQOB-767rlPOiDKHdJYSlcOUSJCKehWpCiSSEhXcepN2N1DaQxC=s80' ,
+    image: 'https://i.imgur.com/rwJkjDz.png' ,
     },
 
     {name: 'Linen' ,
     price:  7.25,
     id: 7, 
-    image: 'https://lh3.googleusercontent.com/h-GiY72kINkMbeBULTSm8Iq_FCz3Fhs77awpAEGFgvwZr9EraE5IpZYr0cgC5bixdt7DbA=s80' ,
+    image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQbralCGdrJZFzIsEugnxG5aI0_QYsM8YQEjz2d5DRH51LP_MwujoGhrLFGb6Fedg6-X0wNU9vwdX9Wx57SHifiZ7qr8PxD8s1NsFnmEbqnQsnYs7tRyoKt2A&usqp=CAE' ,
     },
 
     {name: 'Metal Buttons' ,
@@ -50,7 +50,7 @@ const hobbyInventory= [
     {name: 'Silk Thread' ,
     price:  4.00,
     id: 9,
-    image: 'https://lh3.googleusercontent.com/d8hjQApUQa9sxHhB_2qRFrisD-ri643ixYXXxhOFmJjb565qRm7c7nIDzN5FOLTwvWLvtho=s80' ,
+    image: 'https://i.imgur.com/PbhFbeE.png' ,
     },
 
     {name: 'Marine Silk' ,
@@ -80,7 +80,7 @@ const hobbyInventory= [
     {name: 'Gemstone Buttons' ,
     price:  4.50,
     id: 14,
-    image: 'https://lh3.googleusercontent.com/43n4IHMHZZKMXXm8FylKn8HXi_0lTzcgjGc6GNSbIDp9H2ak5FZEY9zSUy-h11dl87s-ftI=s80' ,
+    image: 'https://i.etsystatic.com/9718575/r/il/de7b4b/1308920422/il_570xN.1308920422_s54e.jpg' ,
     },
     
     {name: 'Cute Ribbon' ,
@@ -92,7 +92,7 @@ const hobbyInventory= [
     {name: 'Divine Cashmere' ,
     price:  15.00,
     id:16,
-    image: 'https://lh3.googleusercontent.com/28M3PZjx2lHM9lhME74bVBXL41LeO3-uKkLN6hbMxXSIxq51PWdj9ePaujnk1cwdeXsYhEo=s80' ,
+    image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQD8JSEcW7Ko8hQRGR5Ow4rzxFUutjRt68Z2Wib8-KvzsS0zgvA9CgOcNGNMdkbb0wAEbav2gSAkCNNzEOhLORdHqnLT8JzKvUt2lAaRQM&usqp=CAE' ,
     },
 
     {name: "Wheels",
