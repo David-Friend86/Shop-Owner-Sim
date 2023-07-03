@@ -11,6 +11,7 @@ import HardwareStore from './HardwareStore';
 import ElectronicStore from './ElectronicStore';
 import MyMaterials from './MyMaterials';
 import ChatContainer from './ChatContainer';
+import AddItem from './AddItem'
 
 import hobbyInventory from './hobbyInventory';
 import hardwareInventory from './hardwareInventory';
@@ -203,6 +204,21 @@ function App() {
     updateChat((chat)=> chat=cc)
   }
 
+  function addNewItem(item){    
+    item.id = shopInventory.length+1
+    const temp= shopInventory
+    temp.push(item)
+    console.log (temp)
+    updateInventory(temp)
+
+    fetch('http://localhost:3000/inventory',{
+      method: 'POST',
+      headers: { 'Content-type': 'application/json'},
+      body: JSON.stringify(item)
+    })
+    .then((r)=> r.json())
+  }
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -223,6 +239,7 @@ function App() {
     fetch('http://localhost:3000/tools')
     .then(r=> r.json())
     .then(d=> updateTools(d))
+    
 
     fetch('http://localhost:3000/playerInfo')
     .then(r=> r.json())
@@ -251,6 +268,9 @@ function App() {
       </Route>
       <Route path="/gadget-garden">
         <ElectronicStore buyItem={buyItem} inventory={electronicsInventory} />
+      </Route>
+      <Route path="/new-item-form">
+        <AddItem materials={materials} tools={tools} addNewItem={addNewItem}/>
       </Route>
       <Route path="/">
         <Home inventory={shopInventory} storeName={playerInfo} handleCrafting={handleCrafting}/>

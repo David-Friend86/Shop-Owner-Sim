@@ -24,6 +24,13 @@ function NavBar({storeName}){
         >{storeName}</NavLink>
 
         <NavLink
+        to='/new-item-form'
+        exact
+        style={linkStyles}
+        activeStyle ={{background: 'darkblue'}}
+        >Add Craft</NavLink>
+
+        <NavLink
         to='/creation-station'
         exact
         style={linkStyles}
@@ -43,7 +50,6 @@ function NavBar({storeName}){
         style={linkStyles}
         activeStyle ={{background: 'darkblue'}}
         >Gadget Garden</NavLink>
-        
         </Fragment>
     )
 }

@@ -1,7 +1,7 @@
 {
   "playerInfo": {
     "id": 1,
-    "storeName": "My Shop",
+    "storeName": "My shop",
     "cash": 29362
   },
   "materials": [
@@ -381,7 +381,7 @@
       "name": "Toy Car",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcLq15FkWKMQY0gl2qsAP1i3FzcChoxWwH7A&usqp=CAU",
       "amount": 0,
-      "sellPrice": 24.50,
+      "sellPrice": 24.5,
       "reqTool": [
         8,
         "https://clipart-library.com/newhp/9-91675_similar-cliparts-saw-clipart.png"
@@ -529,7 +529,7 @@
       "name": "LED Tree",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdthkQhjJ_dvI1jGPnFTxTKQ6zZXaqn0Rh7CkuEC82OMnvEY-LzlCmAlpbHnEEEQsn37U&usqp=CAU",
       "amount": 0,
-      "sellPrice": 21.50,
+      "sellPrice": 21.5,
       "reqTool": [
         5,
         "https://img.freepik.com/premium-vector/soldering-iron-cartoon-design_274619-1333.jpg?w=2000"
